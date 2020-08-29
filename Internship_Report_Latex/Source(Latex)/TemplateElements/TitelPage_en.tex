@@ -1,0 +1,88 @@
+
+% setup page dimensions for titlepage
+\newgeometry{left=2.4cm,right=2.4cm,bottom=2.5cm,top=2cm}
+
+% force baselineskip and parindent
+%\newlength{\tmpbaselineskip}
+%\setlength{\tmpbaselineskip}{\baselineskip}
+%\setlength{\baselineskip}{13.6pt}
+%\newlength{\tmpparindent}
+%\setlength{\tmpparindent}{\parindent}
+%\setlength{\parindent}{17pt}
+
+% first titlepage
+\pagestyle{empty}
+
+% \begin{figure}[H]
+% \vspace*{-2.5cm}
+% \hspace*{2.5cm}
+% \includegraphics[keepaspectratio, width=1.4\textwidth, right]{TemplateElements/fhLogo3.png}
+% \end{figure}
+
+
+
+\begin{center}
+
+\vspace{0.8cm}
+
+\begin{minipage}[t][5cm][s]{\textwidth}%
+\centering
+\Huge{{\color{FH2}{\fontsize{24}{30} \selectfont \ Internship Report\\}}}
+\LARGE{{\color{FH2}{\fontsize{16}{24} \selectfont \subTitle\\}}}
+\end{minipage}
+
+\ifuseBachelorMediaTechnologiesOne
+	\LARGE{SWE-420, Internship }
+\else
+	\ifuseBachelorMediaTechnologiesTwo
+		\LARGE{Bachelor Thesis}
+\else
+	\ifuseMasterInteractiveTechnologies
+		\LARGE{Master Thesis}
+\else
+	\ifuseMasterDigitalDesign
+		\LARGE{Master Thesis}
+\else
+    \ifuseMasterDigitalMediaProduction
+		\LARGE{Master Thesis}
+\else
+	\ifuseMasterDigitalHealthCare
+		\LARGE{Master Thesis}
+    \else
+        \LARGE{YOU HAVE TO CHOOSE THE PROGRAM TYPE IN THE SETTINGS!!!}
+  	\fi
+\fi
+\fi
+\fi\fi\fi
+
+
+
+
+\vspace{2cm}
+
+Submitted by:\\ 
+\fontsize{15pt}{15pt}\selectfont
+\textbf{\ Badrudduza Ahmed\ \ Fahim} \\
+\fontsize{11pt}{15pt}\selectfont
+\ \textbf{2016831020}
+
+\vspace{1.8cm}
+
+Performed at:\\ 
+\textbf{Orbitax Bangladesh Limited} \\
+\fontsize{15pt}{15pt}\selectfont
+\includegraphics[width=0.2\textwidth]{Figures/orbitax_logo.png}\\[0.1in]
+
+\vspace{1cm}
+\includegraphics[width=0.2\textwidth]{Figures/IICT-logo-Main.png}\\[0.1in]
+Institute of Information and Communication Technology,\\
+Shahjalal University of Science and Technology\\
+\begin{center}
+Submission Date:\\ 
+\small{\today}
+\end{center}
+
+
+\end{center}
+
+\restoregeometry
